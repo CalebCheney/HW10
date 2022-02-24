@@ -22,7 +22,7 @@ def main():
         print('Procedure: ', irvine.get_name(),
         '\n', 'Date: ', irvine.get_date(),
         '\n', 'Practitioner: ', irvine.get_pract(),
-        '\n', 'Charge: ', irvine.get_charge(), '\n', sep='')
+        '\n', 'Charge: $', format(irvine.get_charge(), ',.2f'), '\n', sep='')
 
         total += float(irvine.get_charge())
         
@@ -31,7 +31,7 @@ def main():
         print('Procedure: ', drey.get_name(),
         '\n', 'Date: ', drey.get_date(),
         '\n', 'Practitioner: ', drey.get_pract(),
-        '\n', 'Charge: ', drey.get_charge(), '\n', sep='')
+        '\n', 'Charge: $', format(drey.get_charge(), ',.2f'), '\n', sep='')
     
         total += drey.get_charge()
 
@@ -41,7 +41,7 @@ def main():
         print('Procedure: ', hamilton.get_name(),
         '\n', 'Date: ', hamilton.get_date(),
         '\n', 'Practitioner: ', hamilton.get_pract(),
-        '\n', 'Charge: ', hamilton.get_charge(), '\n', sep='')
+        '\n', 'Charge: $', format(hamilton.get_charge(),',.2f'), '\n', sep='')
     
         total += float(hamilton.get_charge())
         
@@ -49,7 +49,7 @@ def main():
         discount = total * .4
         total = total - discount
     
-    print('Total Charges: $', format(total, ',.2f'))
+    print('Total Charges: $', format(total, ',.2f'), sep = '')
     
 
 main()
