@@ -50,6 +50,8 @@ def main():
         total = total - discount
     
     print('Total Charges: $', format(total, ',.2f'), sep = '')
+
+    print()
     
 
 main()
